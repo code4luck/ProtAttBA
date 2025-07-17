@@ -28,12 +28,17 @@ pip install -r ./requirments.txt
 ```
 
 ### dataset
+The source data are located in the ```source_data```(SKEMPI[1], AB-Bind[2]).
 
-Cross validation dataset is located in the  ```cross_validation/data/csv``` folder  (Source: [Jin et al., 2024](https://github.com/ruofanjin/AttABseq)  ）
+[1] Moal I H, Fernández-Recio J. SKEMPI: a structural kinetic and energetic database of mutant protein interactions and its use in empirical models[J]. Bioinformatics, 2012, 28(20): 2600-2607.
 
-Sequence identity dataset is located in the ```seq-identity_sig-mul/data/identity_data``` folder (Use MMseqs with ```--min-seq-id 0.3```)
+[2] Sirin S, Apgar J R, Bennett E M, et al. AB‐bind: antibody binding mutational database for computational affinity predictions[J]. Protein Science, 2016, 25(2): 393-409.
 
-Single mutation training and multi-mutation testing dataset is located in the ```seq-identity_sig-mul/data/sigmul_data``` folder
+Cross validation dataset is located in the  ```cross_validation/data/csv``` folder  (Using the dataset processed by: [Jin et al., 2024](https://github.com/ruofanjin/AttABseq)). The results are located in ```cross_validation/results```
+
+Sequence identity dataset is located in the ```seq-identity_sig-mul/data/identity_data``` folder (Use MMseqs with ```--min-seq-id 0.3```). The results are located in the ```seq-identity_sig-mul/result_idt```.
+
+Single mutation training and multi-mutation testing dataset is located in the ```seq-identity_sig-mul/data/sigmul_data``` folder. The results are located in the ```seq-identity_sig-mul/result_sigmul```.
 
 ### Training
 
